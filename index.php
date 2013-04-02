@@ -4,8 +4,8 @@
  * @file
  * jenbucket main file.
  *
- * Gets an incoming POST service request from Bitbucket (https://bitbucket.org)
- * and connects this trough to a jenkins build.
+ * Receives an incoming POST service request from Bitbucket (https://bitbucket.org)
+ * and connects this through to a jenkins build.
  *
  * TODO:
  * - input validation.
