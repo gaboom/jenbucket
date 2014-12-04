@@ -13,7 +13,7 @@ Receives an incoming POST service request from Bitbucket (https://bitbucket.org)
 and connects this through to a jenkins build.
 
 #### Setup
-1. Put this script on a PHP webserver somewhere where bitbucket can access it (e.g. mydomain.com/jenbucket/jenkins_connector.php)
+1. Put this script on a PHP webserver somewhere where bitbucket can access it (e.g. mydomain.com/jenbucket/index.php)
 
 3. Setup the correct settings in connector script
 	+ $jenkins_url
@@ -23,6 +23,6 @@ and connects this through to a jenkins build.
 
 2. Point bitbucket to this script instead of using the jenkins plugin.
 
-    This is done by doing a post commit hook action (type POST). Set the following url as your POST url: http://mydomain.com/jenbucket/jenkins_connector.php?project=JENKINS_PROJECTNAME
+    This is done by doing a post commit hook action (type POST). Set the following url as your POST url: http://mydomain.com/jenbucket/index.php?project=JENKINS_PROJECTNAME
 
 4. You're up and running! Enjoy!
