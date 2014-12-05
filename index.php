@@ -24,7 +24,7 @@
 
   // Validation function
   function validate($param) {
-    return !empty($param) && strlen($param) <= 128 && !preg_match('/[^a-zA-Z.-_]/', $param);
+    return !empty($param) && strlen($param) <= 128 && !preg_match('#[^a-zA-Z0-9._/-]#', $param);
   }
   // Log function
   function print_in_log($string) {
